@@ -3,7 +3,6 @@
 #include<vector>
 #include<map>
 using namespace std;
-
 int main() {
 	int a, b, c ;
 	int ma[100005] = {};
@@ -12,7 +11,7 @@ int main() {
 	for (int i = 0; i < c; i++) {
 		int d, e;
 		cin >> d >> e;
-		v[min(d - 1,e-1)].push_back(max(d-1,e-1));
+		v[d-1].push_back(e-1);
 	}
 	ma[0] = a + 1;
 	int ans = 1;
